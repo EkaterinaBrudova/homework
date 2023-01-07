@@ -1,0 +1,79 @@
+<!-- Какой элемент применить, чтобы разная ширина столбцов была?? -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+			border-collapse: collapse;
+			border-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+		td, th {
+			border: 1px solid white;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <table >
+        <colgroup>
+            <col>
+            <col style="background-color: #d8e6f3;" span="4">
+        </colgroup>
+		<tr>
+			<th style="text-align: left; background-color: #afcde7;color: white;">Company</th>
+			<th style="background-color: #afcde7;color: white; ">Q1</th>
+			<th style="background-color: #afcde7;color: white; ">Q2</th>
+			<th style="background-color: #afcde7;color: white; ">Q3</th>
+            <th style="background-color: #afcde7;color: white; ">Q4</th>
+		</tr>
+    
+        <tr >
+			<td style="background-color: #afcde7;color: white; text-align: left;">Microsoft</td>
+			<td >20.3</td>
+			<td >30.5</td>
+			<td >23.5</td>
+            <td >27.4</td>
+		</tr>
+
+        <tr>
+			<td style="background-color: #afcde7;color: white; text-align: left;">Google</td>
+			<td >50.2</td>
+			<td >40.63</td>
+			<td >16.8</td>
+            <td >28.5</td>
+		</tr>
+
+        <tr>
+			<td style="background-color: #afcde7;color: white;text-align: left;">Apple</td>
+			<td >25.4</td>
+			<td >30.2</td>
+			<td >14.5</td>
+            <td >18.6</td>
+		</tr>
+
+        <tr>
+			<td style="background-color: #afcde7;color: white; text-align: left;">IBM</td>
+			<td >20.4</td>
+			<td >15.6</td>
+			<td >60.85</td>
+            <td >32.1</td>
+		</tr>
+
+    </table>
+
+
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+<!-- как сделать границы между строками невидимыми? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+        html, body {
+            margin: 0px auto;
+        }
+        
+        table {
+			border-collapse: collapse;
+            width: 40%;
+            font-family: system-ui, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-left: 2px solid #dddddd;
+            border-right: 2px solid #dddddd;
+            border-top: 2px solid #6fcd70;
+            border-bottom: 2px solid  #6fcd70;
+
+        }
+		th {
+			padding: 10px;
+            text-align: center;
+            background-color: white;
+            width: 40%;
+            color: #6fcd70;
+            font-weight: bold;
+            font-size: x-large;
+            
+
+		}
+
+        td {
+			text-align: center;
+            border: 2px solid #dddddd;
+            padding: 10px;
+        }
+
+                
+        tbody tr:nth-child(odd) {
+        background-color: white;
+        color: rgb(160, 164, 168); /* фон нечетных строк */
+        }
+
+        tbody tr:nth-child(even) {
+        background-color: #f5f1f1;
+        color: rgb(160, 164, 168);/* фон четных строк */
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <table>
+        <thead>
+            <tr>
+                <th>Basic</th>
+            </tr>
+        </thead>
+
+        <tr style="background-color: #6fcd70; color: white; font-size: x-large; font-weight: bold;">
+            <td >$99</td>
+        </tr>
+        
+        <tbody>
+        <tr>
+            <td>Option</td>
+        </tr>
+        
+        <tr>
+            <td>Option</td>
+        </tr>
+
+        <tr>
+            <td>Option</td>
+        </tr>
+
+        <tr>
+            <td>Option</td>
+        </tr>
+        
+        <tr>
+            <td>Option</td>
+        </tr>
+
+        <tr>
+            <td>Option</td>
+        </tr>
+        
+        <tr>
+            <td style="border-bottom: #6fcd70;"><button style="border-color: #6fcd70;
+                border-radius: 5px; 
+                padding: 7px; 
+                margin: 10px;
+                color: #6fcd70; 
+                background-color: white;">Purchase</button></td>
+        </tr>
+        
+    </tbody>    
+    </table>  
+</body>
+</html>
