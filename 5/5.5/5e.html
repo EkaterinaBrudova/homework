@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.5e</title>
+<style>
+
+.container {
+    width: 750px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.table_header th {
+    text-align: left;
+    border: 1px solid rgb(188, 196, 197);
+    height: 50px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.table td{
+	border: 1px solid rgb(188, 196, 197);
+    padding: 10px;
+    text-align: left;
+    }
+
+.table td span{
+    display: inline-block;
+    border: 1px solid rgb(188, 196, 197);
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 330px;
+    background-color: rgb(242 241 241);
+}
+
+.content-box { 
+  column-count: 2;
+  text-align: left;
+}
+
+.syntax {
+    background-color:rgb(242 241 241);
+    width: 750px;
+    height: auto;
+    line-height: 1.5;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.property {
+    color: red;
+}
+
+.syntax_value {
+    color: #9e9e9e;
+}
+
+.definition_table code {
+    background-color: #e7e3e3;
+    padding: 3px;
+}   
+
+
+.definition_table th {
+    text-align: left;
+    border: none;
+    border-top: 1px solid rgb(188, 196, 197);
+    padding: 0.5rem 0.75rem;
+    width: 200px;
+}
+
+.definition_table td {
+    text-align: left;
+    border: none;
+    border-top: 1px solid rgb(188, 196, 197);
+    padding: 0.5rem 0.75rem;
+}
+
+.definition_table tr:nth-child(odd) {
+    background-color:  #f5f1f1;
+    }
+
+.definition_table tr:nth-child(even) {
+    background-color: white;
+    }
+.formal_syntax {
+    background-color: rgb(242 241 241);
+    line-height: 1.5;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.formal_syntax p{
+    padding-left: 20px;
+
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+    <h1>column-count</h1>
+    <p>The <b><mark style="background-color: #f2f1f1; padding: 3px;">column-count</mark></b> <a href=
+        "https://github.com/EkaterinaBrudova/homework/blob/BrudovaEkaterina/5/5.5/5.5a.html" 
+        target="_blank">CSS</a> property breaks an element's content into the specified number of
+        columns.</p>
+    <h1>Try it</h1>
+
+<div class="table">
+<table>
+    <tr class="table_header">
+        <th colspan=2>CSS Demo: column-count</th>
+    </tr>
+
+    <tr>
+        <td><span style="box-shadow: 0px 0px 0px 3px rgba(0, 144, 237, 0.4);">column-count: 2; </span></td>
+        <td rowspan=4 style="vertical-align: middle"><p class="content-box">London. Michaelmas term lately 
+            over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. 
+            As much mud in the streets as if the waters had but newly retired from the face of the earth, 
+            and it would no t be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an
+            elephantine lizard up Holborn Hill.</p>
+        </td>
+    </tr>
+    <tr>
+        <td><span>column-count: 3;</span></td>
+    </tr>
+    <tr>
+        <td><span>column-count: 4;</span></td>
+    </tr>
+    <tr>
+        <td><span>column-count: auto;<br>
+            column-width: 8rem;</span></td>
+    </tr>
+</div>
+</table>
+
+<h1>Syntax</h1>
+<div class="syntax">
+
+    <span class="syntax_value"> /* Keyword value */</span> <br>
+    <span class="property"> column-count:</span> auto;  <br>
+    <p></p>
+    <span class="syntax_value">/* < integer > value */</span><br>
+    <span class="property"> column-count:</span> 3;<br>
+    <p></p>
+    <span class="syntax_value">/* Global values */</span><br>
+    <span class="property"> column-count:</span> inherit;<br>
+    <span class="property"> column-count:</span> initial;<br>
+    <span class="property"> column-count:</span> revert;<br>
+    <span class="property"> column-count:</span> revert-layer;<br>
+    <span class="property"> column-count:</span> unset;<br></div> 
+
+<h1>Values</h1>
+<div class="values">
+    <p> <mark style="background-color: #f2f1f1;padding: 3px;">auto</mark><br>
+        <p></p>
+        The number of columns is determined by other CSS properties, such as <mark style="background-color: #f2f1f1; padding: 3px;">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" target="_blank">column-width.</a></mark>
+    </p>
+    <p></p>
+    <p> <mark style="background-color: #f2f1f1; padding: 3px;">< integer ></integer></mark><br><P></P>
+    Is a strictly positive <mark style="background-color: #f2f1f1;padding: 3px;">< integer ></mark> describing the ideal number of columns into which the content of 
+        the element will be flowed. If the <mark style="background-color: #f2f1f1;padding: 3px;">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-width" target="_blank">column-width.</a></mark> is also set 
+            to a non-<mark style="background-color: #f2f1f1; padding: 3px;">auto</mark> value, it merely indicates the maximum allowed number of columns.</p>
+
+<h1>Formal defenition</h1>
+
+<table class="definition_table">
+
+    <tr>
+        <th scope="row"><a href="URL">Initial value</a></th>
+        <td>
+            <code>auto</code>
+        </td>
+    </tr>
+
+    <tr>
+        <th scope="row">Applies to</th>
+        <td>
+            Block containers except table wrapper boxes
+        </td>
+    </tr>
+
+    <tr>
+        <th scope="row"><a href="URL">Inherited</a></th>
+        <td>
+            no
+        </td>
+    </tr>
+    
+    <tr>
+        <th scope="row"><a href="URL">Computed value</a></th>
+        <td>
+            as specified
+        </td>
+    </tr>
+
+    <tr>
+        <th scope="row">Animation type</th>
+        <td>
+            an <a href="URL">integer</a>
+        </td>
+    </tr>
+</table>
+
+<h1>Formal syntax</h1>
+<div class="formal_syntax">
+    <span class="property"> column-count = </span>
+    <p style="color: rgb(47, 47, 243);">auto</p>
+    <p><a href="URL" style="color:red">< integer [1,∞] ></a></p>
+</div> 
+</div>   
+</body>
+</html>
+add homework 5.5e
