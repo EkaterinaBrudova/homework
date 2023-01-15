@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.rating {
+    display:inline-flex;
+}
+
+.starcolor {
+    cursor: pointer;
+    opacity: 0.1;
+}
+
+.rating:hover .starcolor {
+    opacity: 1;
+}
+
+.rating:hover .starcolor:hover ~ .starcolor{
+    opacity: 0.1;
+}
+
+</style>    
+</head>
+<body>
+    <div class="rating">
+    <div class="starcolor"><img src="star1.png"></div>
+    <div class="starcolor"><img src="star1.png"></div>
+    <div class="starcolor"><img src="star1.png"></div>
+    <div class="starcolor"><img src="star1.png"></div>
+    <div class="starcolor"><img src="star1.png"></div>
+
+</div>
+</body>
+</html>
