@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title></head><body>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>CHESS</title>
+  </head>
+  <body>
 <style>
 
   table.CHESS
@@ -14,30 +19,33 @@
     border: solid gray 1px;
   }
 
-.CHESS tr:first-child{
-    background-color:  rgb(12, 177, 67);
+.CHESS.CHESS tr:first-child td {
+    background-color: rgb(12, 177, 67);
+    height: 25px;
 }
 
-.CHESS tr:last-child{
+.CHESS.CHESS tr:last-child td{
     background-color:  rgb(12, 177, 67);
+    height: 25px;
 }
 
 .CHESS td:first-child{
     background-color:  rgb(12, 177, 67);
+    width: 25px;
 }
 
-.CHESS td:last-child{
-    background-color:  rgb(12, 177, 67);
-}
 
+.CHESS td:last-child {
+  background-color: rgb(12, 177, 67);
+  width: 25px;
+
+}
 
 .CHESS tr:not(:first-child):nth-child(odd){
 	background: black;
-}	
+}	 
 
-.CHESS td:not(:last-child):nth-child(odd){
-	background: black;
-}
+
 .CHESS td:not(:first-child):nth-child(odd){
 	background: black;
 }

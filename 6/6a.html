@@ -8,14 +8,15 @@
      <style>
         table {
 			border-collapse: collapse;
-            border-radius: 50px;
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
             
         }
 		th {
 			border-right: 3px solid red;
             padding: 10px;
             text-align: left;
+            font-weight: lighter;
 		}
         html, body {
             font-family: Arial, Helvetica, sans-serif;
@@ -26,8 +27,34 @@
         }
 
         th:last-of-type {
-            border-left: 3px solid red;
+            border: none;
         }
+
+
+        .flex-container {
+            display: flex;
+            flex-direction:row;
+			padding:10px;
+			gap: 10px;
+            
+        }
+
+        .flex-border {
+        flex-basis: 140px;
+        line-height: 30px;
+        text-align: center;
+        border-right: solid 3px red;
+        color: green;
+        }
+
+        .flex-border:last-of-type {
+            border: none;
+        }
+
+        [href] { 
+            color: green;
+        }
+
     </style>
 </head>
 
@@ -43,6 +70,13 @@
 </tr>
 </table>
 
+<div class="flex-container">
+    <div class="flex-border"><a href="url">первая ссылка</a></div>
+    <div class="flex-border"><a href="url">вторая ссылка</a></div>
+    <div class="flex-border"><a href="url">третья ссылка</a></div>
+    <div class="flex-border"><a href="url">четвертая ссылка</a></div>
+    <div class="flex-border"><a href="url">пятая ссылка</a></div>
+</div> 
 
 
     
