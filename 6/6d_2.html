@@ -10,7 +10,7 @@
   width: 125px;
   height: 25px;
 }
-.rating_block input[type="radio"] {
+ .rating_block input[type="radio"] {
   display: none;
 }
 .label_rating {
@@ -19,15 +19,18 @@
   width: 100px;
   height: 100px;
   background: url(star1.png) no-repeat 50% 0;
+  opacity: 0.1;
   cursor: pointer;
 }
-/*Пишем правила смены положения background-а*/
-.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
-.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
-.rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+
+.rating_block .label_rating:hover, 
+.rating_block input[type="radio"]:checked ~ .label_rating 
 {
-  background-position: 50% -100px;
+  opacity: 1;
 }
+
+
+
  </style>   
 </head>
 <body>
